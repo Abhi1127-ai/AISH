@@ -32,6 +32,7 @@ public class GeminiRequest {
         private String text;
     }
 
+
     @Data
     @Builder
     @NoArgsConstructor
@@ -58,6 +59,6 @@ public class GeminiRequest {
     public static class Property {
         private String type;
         private String description;
-        private Property items; // for array type
+        private Property items;
     }
 }

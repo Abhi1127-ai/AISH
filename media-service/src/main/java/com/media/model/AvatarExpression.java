@@ -15,10 +15,11 @@ import java.time.Instant;
 @NoArgsConstructor
 @AllArgsConstructor
 public class AvatarExpression {
+
     @Id
     private String id;
-    private String emotion; // e.g., "happy", "sad", "playful", "angry", "stressed", "neutral"
-    private String filePath; // absolute or relative path to the file
+    private String emotion;
+    private String filePath;
     private String fileName;
     private String contentType;
     private Instant createdAt;

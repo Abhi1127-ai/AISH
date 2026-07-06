@@ -1,4 +1,4 @@
-# 💬 AISH
+#  AISH
 
 > *"Kyunki kabhi kabhi bas koi sunne wala chahiye hota hai."*
 
@@ -6,18 +6,18 @@ AISH is an emotion-aware AI companion web app that provides meaningful, human-li
 
 ---
 
-## 🌟 Features
+##  Features
 
-- 🧠 **Emotion-Aware Conversations** — Powered by Google Gemini, detects mood from text (sad, happy, playful, stressed) and responds accordingly
-- 🗣️ **Hinglish / Hindi / English Support** — Talk however you want, she understands
-- 💾 **Persistent Memory** — She remembers your name, your past conversations, your bad days
-- 🔔 **Proactive Notifications** — She texts you first (Firebase FCM) — "Aaj kaisa raha din? 🌸"
-- 😊 **Expressive Avatar** — Emotion-mapped expressions that react to the conversation
-- 📱 **WhatsApp-style Chat UI** — Familiar, clean, mobile-first design
+-  **Emotion-Aware Conversations** — Powered by Google Gemini, detects mood from text (sad, happy, playful, stressed) and responds accordingly
+-  **Hinglish / Hindi / English Support** — Talk however you want, she understands
+-  **Persistent Memory** — She remembers your name, your past conversations, your bad days
+-  **Proactive Notifications** — She texts you first (Firebase FCM) — "Aaj kaisa raha din? 🌸"
+-  **Expressive Avatar** — Emotion-mapped expressions that react to the conversation
+-  **WhatsApp-style Chat UI** — Familiar, clean, mobile-first design
 
 ---
 
-## 🏗️ Architecture — Microservices
+##  Architecture — Microservices
 
 ```
 AISH/
@@ -32,7 +32,7 @@ AISH/
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 | Layer | Technology |
 |-------|-----------|
@@ -47,42 +47,42 @@ AISH/
 
 ---
 
-## 📦 Microservices Breakdown
+##  Microservices Breakdown
 
-### 🔐 Auth Service
+###  Auth Service
 - User registration & login
 - JWT token generation & validation
 - Password encryption (BCrypt)
 
-### 💬 Chat Service
+###  Chat Service
 - Gemini API integration
 - Emotion detection from user messages
 - Persona-based system prompt injection
 - Short, natural reply formatting (real texting style)
 
-### 🧠 Memory Service
+###  Memory Service
 - Stores full conversation history per user
 - Extracts and saves key user facts ("exam tha", "bura din tha")
 - Feeds memory context into each Gemini prompt
 
-### 👧 Persona Service
+###  Persona Service
 - AI companion profile (name, personality, speaking style)
 - Expression photo management
 - Emotion → photo mapping config
 
-### 🔔 Notification Service
+###  Notification Service
 - Firebase FCM integration
 - Scheduled proactive messages ("Good morning 🌸")
 - Event-triggered messages (user hasn't chatted in a while)
 
-### 🖼️ Media Service
+###  Media Service
 - Avatar photo upload & storage
 - Emotion tag management
 - Serves correct expression based on chat emotion
 
 ---
 
-## 🤖 Emotion Detection Flow
+##  Emotion Detection Flow
 
 ```
 User Message → Gemini analyzes tone
@@ -98,7 +98,7 @@ Frontend renders response + correct avatar expression
 
 ---
 
-## 💡 Gemini Prompt Design (Core)
+##  Gemini Prompt Design (Core)
 
 ```
 You are Priya, a 21 year old girl who is warm, caring, and slightly playful.
@@ -113,7 +113,7 @@ Respond accordingly with care.
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Java 21
@@ -140,7 +140,7 @@ npm run dev
 
 ---
 
-## 🗂️ Environment Variables
+##  Environment Variables
 
 ```env
 # Gemini
@@ -160,7 +160,7 @@ FIREBASE_CREDENTIALS_PATH=firebase-credentials.json
 
 ---
 
-## 📸 Avatar Generation (Stable Diffusion)
+##  Avatar Generation (Stable Diffusion)
 
 We use **Automatic1111 + IP-Adapter** to generate a consistent AI character across multiple emotional expressions:
 
@@ -173,7 +173,7 @@ We use **Automatic1111 + IP-Adapter** to generate a consistent AI character acro
 
 ---
 
-## 🗺️ Roadmap
+##  Roadmap
 
 - [x] Project architecture design
 - [ ] Auth Service
